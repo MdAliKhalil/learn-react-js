@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import style from "./Counter.module.css";
+import Divider from "./Divider";
 
 function Counter() {
     const [count, setCount] = useState(0);
@@ -14,6 +15,7 @@ function Counter() {
                     setCount(count - 1);
                 }
             }}>Decrement</button>
+            <Divider />
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './JSX Exercise.module.css';
 import Camera from '../public/Camera.jpg';
+import Divider from './Divider';
 
 function JSXExercise() {
     return (
@@ -15,6 +16,7 @@ function JSXExercise() {
             <button className={style.btn} onClick={() => {
                 alert('A world of photography is waiting for you!');
             }}>Experience Now</button>
+            <Divider />
         </div>
     );
 }
