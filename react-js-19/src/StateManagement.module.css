@@ -1,0 +1,12 @@
+.image {
+    width: 25%;
+}
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}

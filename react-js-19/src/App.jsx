@@ -4,6 +4,7 @@
 // import './App.css'
 import Counter from "./Counter"
 import JSXExercise from "./JSX Exercise"
+import StateManagement from "./StateManagement"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -33,6 +34,7 @@ function App() {
 
       <Counter />
       <JSXExercise />
+      <StateManagement />
     </>
   )
 }
