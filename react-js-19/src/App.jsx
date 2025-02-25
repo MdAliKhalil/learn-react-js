@@ -3,6 +3,7 @@
 // import viteLogo from '/vite.svg'
 // import './App.css'
 import Counter from "./Counter"
+import JSXExercise from "./JSX Exercise"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -31,6 +32,7 @@ function App() {
       </p> */}
 
       <Counter />
+      <JSXExercise />
     </>
   )
 }
