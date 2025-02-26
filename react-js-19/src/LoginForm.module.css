@@ -1,0 +1,19 @@
+.inpt {
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: 8px 10px;
+}
+
+.inpt:focus {
+    outline: none;
+}
+
+.btn {
+    margin-top: 10px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}

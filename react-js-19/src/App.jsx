@@ -6,6 +6,7 @@ import ConditionalRenderingExercise from "./ConditionalRenderingExercise"
 import Counter from "./Counter"
 import DefaultProps from "./DefaultProps"
 import JSXExercise from "./JSX Exercise"
+import LoginForm from "./LoginForm"
 import ObjectAsProps from "./ObjectAsProps"
 import PassJSXWithProps from "./PassJSXWithProps"
 import StateManagement from "./StateManagement"
@@ -43,6 +44,7 @@ function App() {
       <ObjectAsProps />
       <DefaultProps />
       <PassJSXWithProps />
+      <LoginForm />
     </>
   )
 }
