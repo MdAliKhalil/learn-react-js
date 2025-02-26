@@ -2,6 +2,7 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
+import ConditionalRenderingExercise from "./ConditionalRenderingExercise"
 import Counter from "./Counter"
 import JSXExercise from "./JSX Exercise"
 import StateManagement from "./StateManagement"
@@ -35,6 +36,7 @@ function App() {
       <Counter />
       <JSXExercise />
       <StateManagement />
+      <ConditionalRenderingExercise />
     </>
   )
 }
