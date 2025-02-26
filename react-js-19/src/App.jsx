@@ -4,6 +4,7 @@
 // import './App.css'
 import ConditionalRenderingExercise from "./ConditionalRenderingExercise"
 import Counter from "./Counter"
+import DefaultProps from "./DefaultProps"
 import JSXExercise from "./JSX Exercise"
 import ObjectAsProps from "./ObjectAsProps"
 import StateManagement from "./StateManagement"
@@ -39,6 +40,7 @@ function App() {
       <StateManagement />
       <ConditionalRenderingExercise />
       <ObjectAsProps />
+      <DefaultProps />
     </>
   )
 }
