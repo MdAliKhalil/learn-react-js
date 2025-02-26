@@ -5,6 +5,7 @@
 import ConditionalRenderingExercise from "./ConditionalRenderingExercise"
 import Counter from "./Counter"
 import JSXExercise from "./JSX Exercise"
+import ObjectAsProps from "./ObjectAsProps"
 import StateManagement from "./StateManagement"
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
       <JSXExercise />
       <StateManagement />
       <ConditionalRenderingExercise />
+      <ObjectAsProps />
     </>
   )
 }
