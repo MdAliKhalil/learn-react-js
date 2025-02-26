@@ -7,6 +7,7 @@ import Counter from "./Counter"
 import DefaultProps from "./DefaultProps"
 import JSXExercise from "./JSX Exercise"
 import ObjectAsProps from "./ObjectAsProps"
+import PassJSXWithProps from "./PassJSXWithProps"
 import StateManagement from "./StateManagement"
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
       <ConditionalRenderingExercise />
       <ObjectAsProps />
       <DefaultProps />
+      <PassJSXWithProps />
     </>
   )
 }
