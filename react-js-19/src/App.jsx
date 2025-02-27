@@ -3,6 +3,7 @@
 // import viteLogo from '/vite.svg'
 // import './App.css'
 import ConditionalRenderingExercise from "./ConditionalRenderingExercise"
+import ControlledComponent from "./ControlledComponent"
 import Counter from "./Counter"
 import DefaultProps from "./DefaultProps"
 import JSXExercise from "./JSX Exercise"
@@ -45,6 +46,7 @@ function App() {
       <DefaultProps />
       <PassJSXWithProps />
       <LoginForm />
+      <ControlledComponent />
     </>
   )
 }
