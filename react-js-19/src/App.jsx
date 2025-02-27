@@ -2,6 +2,7 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
+import ArrayMapping from "./ArrayMapping"
 import CheckBoxes from "./Checkboxes"
 import ConditionalRenderingExercise from "./ConditionalRenderingExercise"
 import ControlledComponent from "./ControlledComponent"
@@ -51,6 +52,7 @@ function App() {
       <ControlledComponent />
       <CheckBoxes />
       <SpreadOperator />
+      <ArrayMapping />
     </>
   )
 }
