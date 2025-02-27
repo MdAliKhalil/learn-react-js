@@ -11,6 +11,7 @@ import JSXExercise from "./JSX Exercise"
 import LoginForm from "./LoginForm"
 import ObjectAsProps from "./ObjectAsProps"
 import PassJSXWithProps from "./PassJSXWithProps"
+import SpreadOperator from "./SpreadOperator"
 import StateManagement from "./StateManagement"
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
       <LoginForm />
       <ControlledComponent />
       <CheckBoxes />
+      <SpreadOperator />
     </>
   )
 }
