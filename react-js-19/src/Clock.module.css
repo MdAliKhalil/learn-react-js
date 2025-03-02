@@ -1,0 +1,10 @@
+.clk {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: black;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}

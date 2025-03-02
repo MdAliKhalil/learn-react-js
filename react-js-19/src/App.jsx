@@ -4,6 +4,7 @@
 // import './App.css'
 import ArrayMapping from "./ArrayMapping"
 import CheckBoxes from "./Checkboxes"
+import ClockColor from "./ClockColor"
 import ConditionalRenderingExercise from "./ConditionalRenderingExercise"
 import ControlledComponent from "./ControlledComponent"
 import Counter from "./Counter"
@@ -55,6 +56,7 @@ function App() {
       <SpreadOperator />
       <ArrayMapping />
       <ReuseComponentInLoop />
+      <ClockColor />
     </>
   )
 }
