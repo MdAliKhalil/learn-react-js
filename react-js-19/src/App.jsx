@@ -12,6 +12,7 @@ import JSXExercise from "./JSX Exercise"
 import LoginForm from "./LoginForm"
 import ObjectAsProps from "./ObjectAsProps"
 import PassJSXWithProps from "./PassJSXWithProps"
+import ReuseComponentInLoop from "./ReuseComponentInLoop"
 import SpreadOperator from "./SpreadOperator"
 import StateManagement from "./StateManagement"
 
@@ -53,6 +54,7 @@ function App() {
       <CheckBoxes />
       <SpreadOperator />
       <ArrayMapping />
+      <ReuseComponentInLoop />
     </>
   )
 }
