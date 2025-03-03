@@ -17,6 +17,7 @@ import PassJSXWithProps from "./PassJSXWithProps"
 import ReuseComponentInLoop from "./ReuseComponentInLoop"
 import SpreadOperator from "./SpreadOperator"
 import StateManagement from "./StateManagement"
+import UseEffectHook from "./UseEffectHook"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -59,6 +60,7 @@ function App() {
       <ReuseComponentInLoop />
       <ClockColor />
       <ArrayNestedLooping />
+      <UseEffectHook />
     </>
   )
 }
