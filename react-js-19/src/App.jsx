@@ -3,6 +3,7 @@
 // import viteLogo from '/vite.svg'
 // import './App.css'
 import ArrayMapping from "./ArrayMapping"
+import ArrayNestedLooping from "./ArrayNestedLooping"
 import CheckBoxes from "./Checkboxes"
 import ClockColor from "./ClockColor"
 import ConditionalRenderingExercise from "./ConditionalRenderingExercise"
@@ -57,6 +58,7 @@ function App() {
       <ArrayMapping />
       <ReuseComponentInLoop />
       <ClockColor />
+      <ArrayNestedLooping />
     </>
   )
 }
