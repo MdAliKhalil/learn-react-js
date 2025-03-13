@@ -19,6 +19,7 @@ import SpreadOperator from "./SpreadOperator"
 import StateManagement from "./StateManagement"
 import UseEffectHook from "./UseEffectHook"
 import UseEffectHookWithReturn from "./UseEffectHookWithReturn"
+import UserCard from "./UserCard"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -63,6 +64,7 @@ function App() {
       <ArrayNestedLooping />
       <UseEffectHook />
       <UseEffectHookWithReturn />
+      <UserCard />
     </>
   )
 }
