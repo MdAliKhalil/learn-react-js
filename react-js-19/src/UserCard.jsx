@@ -41,7 +41,9 @@ function UserCard() {
     );
 }
 
-function Cards({ users, container, card, content }) {
+function Cards(props) {
+    const { users, container, card, content } = props;
+    
     return (
         <>
             <div style={container}>
