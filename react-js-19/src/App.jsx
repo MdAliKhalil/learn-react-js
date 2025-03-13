@@ -18,6 +18,7 @@ import ReuseComponentInLoop from "./ReuseComponentInLoop"
 import SpreadOperator from "./SpreadOperator"
 import StateManagement from "./StateManagement"
 import UseEffectHook from "./UseEffectHook"
+import UseEffectHookWithReturn from "./UseEffectHookWithReturn"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -61,6 +62,7 @@ function App() {
       <ClockColor />
       <ArrayNestedLooping />
       <UseEffectHook />
+      <UseEffectHookWithReturn />
     </>
   )
 }
