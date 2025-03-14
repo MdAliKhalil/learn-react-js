@@ -10,6 +10,7 @@ import ConditionalRenderingExercise from "./ConditionalRenderingExercise"
 import ControlledComponent from "./ControlledComponent"
 import Counter from "./Counter"
 import DefaultProps from "./DefaultProps"
+import DynamicStyle from "./DynamicStyle"
 import JSXExercise from "./JSX Exercise"
 import LoginForm from "./LoginForm"
 import ObjectAsProps from "./ObjectAsProps"
@@ -65,6 +66,7 @@ function App() {
       <UseEffectHook />
       <UseEffectHookWithReturn />
       <UserCard />
+      <DynamicStyle />
     </>
   )
 }
