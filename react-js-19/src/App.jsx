@@ -11,6 +11,7 @@ import ControlledComponent from "./ControlledComponent"
 import Counter from "./Counter"
 import DefaultProps from "./DefaultProps"
 import DynamicStyle from "./DynamicStyle"
+import ForwardRefParent from "./ForwardRefParent"
 import JSXExercise from "./JSX Exercise"
 import LoginForm from "./LoginForm"
 import ObjectAsProps from "./ObjectAsProps"
@@ -71,6 +72,7 @@ function App() {
       <DynamicStyle />
       <UseRefHook />
       <UncontrolledComponent />
+      <ForwardRefParent />
     </>
   )
 }
