@@ -18,6 +18,7 @@ import PassJSXWithProps from "./PassJSXWithProps"
 import ReuseComponentInLoop from "./ReuseComponentInLoop"
 import SpreadOperator from "./SpreadOperator"
 import StateManagement from "./StateManagement"
+import UncontrolledComponent from "./UncontrolledComponent"
 import UseEffectHook from "./UseEffectHook"
 import UseEffectHookWithReturn from "./UseEffectHookWithReturn"
 import UserCard from "./UserCard"
@@ -69,6 +70,7 @@ function App() {
       <UserCard />
       <DynamicStyle />
       <UseRefHook />
+      <UncontrolledComponent />
     </>
   )
 }
