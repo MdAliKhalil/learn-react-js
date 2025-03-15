@@ -21,6 +21,7 @@ import StateManagement from "./StateManagement"
 import UseEffectHook from "./UseEffectHook"
 import UseEffectHookWithReturn from "./UseEffectHookWithReturn"
 import UserCard from "./UserCard"
+import UseRefHook from "./UseRefHook"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -67,6 +68,7 @@ function App() {
       <UseEffectHookWithReturn />
       <UserCard />
       <DynamicStyle />
+      <UseRefHook />
     </>
   )
 }
