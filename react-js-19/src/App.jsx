@@ -22,6 +22,7 @@ import StateManagement from "./StateManagement"
 import UncontrolledComponent from "./UncontrolledComponent"
 import UseEffectHook from "./UseEffectHook"
 import UseEffectHookWithReturn from "./UseEffectHookWithReturn"
+import UseFormStatusHook from "./UseFormStatusHook"
 import UserCard from "./UserCard"
 import UseRefHook from "./UseRefHook"
 
@@ -73,6 +74,7 @@ function App() {
       <UseRefHook />
       <UncontrolledComponent />
       <ForwardRefParent />
+      <UseFormStatusHook />
     </>
   )
 }
