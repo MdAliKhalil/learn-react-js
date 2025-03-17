@@ -17,7 +17,6 @@ const UseTransitionHook = () => {
             <div className={style.container}>
                 <button className={style.btn} onClick={handleClick} disabled={pending}>{pending ? 'Getting...' : 'Get Data'}</button>
                 {pending ? <img src={Spinner} alt="Spinner" /> : null}
-                <br /><br />
             </div>
             <Divider />
         </>
