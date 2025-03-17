@@ -10,6 +10,7 @@ import ConditionalRenderingExercise from "./ConditionalRenderingExercise"
 import ControlledComponent from "./ControlledComponent"
 import Counter from "./Counter"
 import DefaultProps from "./DefaultProps"
+import DerivedState from "./DerivedState"
 import DynamicStyle from "./DynamicStyle"
 import ForwardRefParent from "./ForwardRefParent"
 import JSXExercise from "./JSX Exercise"
@@ -77,6 +78,7 @@ function App() {
       <ForwardRefParent />
       <UseFormStatusHook />
       <UseTransitionHook />
+      <DerivedState />
     </>
   )
 }
