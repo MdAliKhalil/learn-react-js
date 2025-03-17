@@ -25,6 +25,7 @@ import UseEffectHookWithReturn from "./UseEffectHookWithReturn"
 import UseFormStatusHook from "./UseFormStatusHook"
 import UserCard from "./UserCard"
 import UseRefHook from "./UseRefHook"
+import UseTransitionHook from "./useTransitionHook"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -75,6 +76,7 @@ function App() {
       <UncontrolledComponent />
       <ForwardRefParent />
       <UseFormStatusHook />
+      <UseTransitionHook />
     </>
   )
 }
