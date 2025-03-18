@@ -14,6 +14,7 @@ import DerivedState from "./DerivedState"
 import DynamicStyle from "./DynamicStyle"
 import ForwardRefParent from "./ForwardRefParent"
 import JSXExercise from "./JSX Exercise"
+import LiftingStateUp from "./LiftingStateUp"
 import LoginForm from "./LoginForm"
 import ObjectAsProps from "./ObjectAsProps"
 import PassJSXWithProps from "./PassJSXWithProps"
@@ -79,6 +80,7 @@ function App() {
       <UseFormStatusHook />
       <UseTransitionHook />
       <DerivedState />
+      <LiftingStateUp />
     </>
   )
 }
