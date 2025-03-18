@@ -28,6 +28,7 @@ import UseActionStateHook from "./UseActionStateHook"
 import UseEffectHook from "./UseEffectHook"
 import UseEffectHookWithReturn from "./UseEffectHookWithReturn"
 import UseFormStatusHook from "./UseFormStatusHook"
+import UseIDHook from "./UseIDHook"
 import UserCard from "./UserCard"
 import UseRefHook from "./UseRefHook"
 import UseTransitionHook from "./useTransitionHook"
@@ -87,6 +88,7 @@ function App() {
       <UpdateObjectInState />
       <UseActionStateHook />
       <UpdateArrayInState />
+      <UseIDHook />
     </>
   )
 }
