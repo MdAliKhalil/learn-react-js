@@ -27,9 +27,9 @@ const UseActionStateHook = () => {
     return (
         <>
             <form action={action}>
-                <input type="text" name="username" id="" placeholder="Enter your email" className={style.inpt} />
+                <input type="text" name="username" defaultValue={data?.user} placeholder="Enter your email" autoComplete="username" className={style.inpt} />
                 <br />
-                <input type="password" name="password" id="" placeholder="Enter your password" className={style.inpt} />
+                <input type="password" name="password" defaultValue={data?.pass} placeholder="Enter your password" autoComplete="current-password" className={style.inpt} />
                 <br /><br />
                 <button disabled={pending} className={style.btn}>{pending ? 'Submitting...' : 'Submit'}</button>
             </form>
