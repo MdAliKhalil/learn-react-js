@@ -1,0 +1,9 @@
+.inpt {
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: 8px 10px;
+}
+
+.inpt:focus {
+    outline: none;
+}

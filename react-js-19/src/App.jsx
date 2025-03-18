@@ -22,6 +22,7 @@ import ReuseComponentInLoop from "./ReuseComponentInLoop"
 import SpreadOperator from "./SpreadOperator"
 import StateManagement from "./StateManagement"
 import UncontrolledComponent from "./UncontrolledComponent"
+import UpdateArrayInState from "./UpdateArrayInState"
 import UpdateObjectInState from "./UpdateObjectInState"
 import UseActionStateHook from "./UseActionStateHook"
 import UseEffectHook from "./UseEffectHook"
@@ -85,6 +86,7 @@ function App() {
       <LiftingStateUp />
       <UpdateObjectInState />
       <UseActionStateHook />
+      <UpdateArrayInState />
     </>
   )
 }
