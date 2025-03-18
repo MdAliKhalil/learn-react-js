@@ -13,6 +13,7 @@ import DefaultProps from "./DefaultProps"
 import DerivedState from "./DerivedState"
 import DynamicStyle from "./DynamicStyle"
 import ForwardRefParent from "./ForwardRefParent"
+import FragmentWrapper from "./FragmentWrapper"
 import JSXExercise from "./JSX Exercise"
 import LiftingStateUp from "./LiftingStateUp"
 import LoginForm from "./LoginForm"
@@ -89,6 +90,7 @@ function App() {
       <UseActionStateHook />
       <UpdateArrayInState />
       <UseIDHook />
+      <FragmentWrapper />
     </>
   )
 }
