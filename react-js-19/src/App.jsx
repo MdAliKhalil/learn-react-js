@@ -22,6 +22,7 @@ import ReuseComponentInLoop from "./ReuseComponentInLoop"
 import SpreadOperator from "./SpreadOperator"
 import StateManagement from "./StateManagement"
 import UncontrolledComponent from "./UncontrolledComponent"
+import UpdateObjectInState from "./UpdateObjectInState"
 import UseEffectHook from "./UseEffectHook"
 import UseEffectHookWithReturn from "./UseEffectHookWithReturn"
 import UseFormStatusHook from "./UseFormStatusHook"
@@ -81,6 +82,7 @@ function App() {
       <UseTransitionHook />
       <DerivedState />
       <LiftingStateUp />
+      <UpdateObjectInState />
     </>
   )
 }
