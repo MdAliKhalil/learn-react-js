@@ -12,6 +12,12 @@ const UseTransitionHook = () => {
         })
     }
 
+    // setTimeout(() => {
+    //     console.log("Hooray!");
+    // }, 0)
+    // console.log("hello");
+    console.log("Testing pending...", pending);
+
     return (
         <>
             <div className={style.container}>
