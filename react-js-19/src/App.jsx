@@ -2,11 +2,14 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
+import { useState } from "react"
 import ArrayMapping from "./ArrayMapping"
 import ArrayNestedLooping from "./ArrayNestedLooping"
 import CheckBoxes from "./Checkboxes"
 import ClockColor from "./ClockColor"
 import ConditionalRenderingExercise from "./ConditionalRenderingExercise"
+import College from "./ContextAPI/College"
+import { data } from "./ContextAPI/ContextData"
 import ControlledComponent from "./ControlledComponent"
 import Counter from "./Counter"
 import DefaultProps from "./DefaultProps"
@@ -36,6 +39,7 @@ import UseTransitionHook from "./useTransitionHook"
 
 function App() {
   // const [count, setCount] = useState(0)
+  const [subject, setSubject] = useState('');
 
   return (
     <>
@@ -91,6 +95,26 @@ function App() {
       <UpdateArrayInState />
       <UseIDHook />
       <FragmentWrapper />
+      <data.Provider value={subject}>
+        <select value={subject} onChange={(event) => setSubject(event.target.value)}>
+          <option value="">Select a Subject</option>
+          <option value="Math">Math</option>
+          <option value="English">English</option>
+          <option value="Computer">Computer</option>
+        </select>
+        <button style={{
+          marginLeft: '2px',
+          border: 'none',
+          padding: '10px 20px',
+          borderRadius: '50px',
+          backgroundColor: '#000000',
+          color: '#ffffff',
+          cursor: 'pointer'
+        }} onClick={() => {
+          setSubject('');
+        }}>Reset</button>
+        <College />
+      </data.Provider>
     </>
   )
 }
