@@ -36,6 +36,7 @@ import UseIDHook from "./UseIDHook"
 import UserCard from "./UserCard"
 import UseRefHook from "./UseRefHook"
 import UseTransitionHook from "./useTransitionHook"
+import Toggle from "./CustomHook/Toggle"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -115,6 +116,7 @@ function App() {
         }}>Reset</button>
         <College />
       </data.Provider>
+      <Toggle />
     </>
   )
 }
