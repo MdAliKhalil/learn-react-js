@@ -103,10 +103,10 @@ function App() {
           <Route path="/toggle" element={<Toggle />}></Route>
 
           {/* Show 404 on Invalid url */}
-          {/* <Route path="/*" element={<PageNotFound />}></Route> */}
+          <Route path="/*" element={<PageNotFound />}></Route>
 
           {/* Redirect to Homepage on invalid url */}
-          <Route path='/*' element={<Navigate to='/' />}></Route>
+          {/* <Route path='/*' element={<Navigate to='/' />}></Route> */}
         </Routes>
       </data.Provider>
     </>
