@@ -5,7 +5,6 @@ import style from './Navbar.module.css';
 const Navbar = () => {
     return (
         <div>
-            <Divider />
             <div className={style.header}>
                 <div><Link to='/' className={style.logo}>Logo</Link></div>
                 <div>
@@ -14,10 +13,10 @@ const Navbar = () => {
                             <Link to="/" className={style.menuitem}>Home</Link>
                         </li>
                         <li>
-                            <Link to="/counter" className={style.menuitem}>Counter</Link>
+                            <Link to="/toggle" className={style.menuitem}>Toggle</Link>
                         </li>
                         <li>
-                            <Link to="/toggle" className={style.menuitem}>Toggle</Link>
+                            <Link to="/login-form" className={style.menuitem}>Login</Link>
                         </li>
                     </ul>
                 </div>

@@ -1,7 +1,6 @@
-// import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-// import './App.css'
+import './App.css'
 import { useState } from "react"
 import ArrayMapping from "./ArrayMapping"
 import ArrayNestedLooping from "./ArrayNestedLooping"
@@ -37,72 +36,18 @@ import UserCard from "./UserCard"
 import UseRefHook from "./UseRefHook"
 import UseTransitionHook from "./useTransitionHook"
 import Toggle from "./CustomHook/Toggle"
-import { Route, Routes, Link } from "react-router"
+import { Route, Routes, Navigate } from "react-router"
 import Navbar from "./Navbar/Navbar"
+import PageNotFound from "./PageNotFound"
 
 function App() {
-  // const [count, setCount] = useState(0)
   const [subject, setSubject] = useState('');
 
   return (
     <>
-      {/* <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
-
-      <Link to="./counter">Counter</Link>
-      <Routes>
-        <Route path="/counter" element={<Counter />}></Route>
-      </Routes>
-      <JSXExercise />
-      <StateManagement />
-      <ConditionalRenderingExercise />
-      <ObjectAsProps />
-      <DefaultProps />
-      <PassJSXWithProps />
-      <LoginForm />
-      <ControlledComponent />
-      <CheckBoxes />
-      <SpreadOperator />
-      <ArrayMapping />
-      <ReuseComponentInLoop />
-      <ClockColor />
-      <ArrayNestedLooping />
-      <UseEffectHook />
-      <UseEffectHookWithReturn />
-      <UserCard />
-      <DynamicStyle />
-      <UseRefHook />
-      <UncontrolledComponent />
-      <ForwardRefParent />
-      <UseFormStatusHook />
-      <UseTransitionHook />
-      <DerivedState />
-      <LiftingStateUp />
-      <UpdateObjectInState />
-      <UseActionStateHook />
-      <UpdateArrayInState />
-      <UseIDHook />
-      <FragmentWrapper />
+      <Navbar />
       <data.Provider value={subject}>
-        <select value={subject} onChange={(event) => setSubject(event.target.value)}>
+        <select value={subject} onChange={(event) => setSubject(event.target.value)} style={{ textAlign: 'center', display: 'block', margin: 'auto' }}>
           <option value="">Select a Subject</option>
           <option value="Math">Math</option>
           <option value="English">English</option>
@@ -115,17 +60,55 @@ function App() {
           borderRadius: '50px',
           backgroundColor: '#000000',
           color: '#ffffff',
-          cursor: 'pointer'
+          cursor: 'pointer',
+          textAlign: 'center',
+          display: 'block',
+          margin: 'auto'
         }} onClick={() => {
           setSubject('');
         }}>Reset</button>
-        <College />
+        <Routes>
+          <Route path="/" element={<Counter />}></Route>
+          <Route path="/jsx-exercise" element={<JSXExercise />}></Route>
+          <Route path="/state-management" element={<StateManagement />}></Route>
+          <Route path="/conditional-rendering-exercise" element={<ConditionalRenderingExercise />}></Route>
+          <Route path="/object-as-props" element={<ObjectAsProps />}></Route>
+          <Route path="/default-props" element={<DefaultProps />}></Route>
+          <Route path="/pass-jsx-with-props" element={<PassJSXWithProps />}></Route>
+          <Route path="/login-form" element={<LoginForm />}></Route>
+          <Route path="/controlled-component" element={<ControlledComponent />}></Route>
+          <Route path="/checkboxes" element={<CheckBoxes />}></Route>
+          <Route path="/spread-operator" element={<SpreadOperator />}></Route>
+          <Route path="/array-mapping" element={<ArrayMapping />}></Route>
+          <Route path="/reuse-component-in-loop" element={<ReuseComponentInLoop />}></Route>
+          <Route path="/clock-color" element={<ClockColor />}></Route>
+          <Route path="/array-nested-looping" element={<ArrayNestedLooping />}></Route>
+          <Route path="/use-effect-hook" element={<UseEffectHook />}></Route>
+          <Route path="/use-effect-hook-with-return" element={<UseEffectHookWithReturn />}></Route>
+          <Route path="/user-card" element={<UserCard />}></Route>
+          <Route path="/dynamic-style" element={<DynamicStyle />}></Route>
+          <Route path="/use-ref-hook" element={<UseRefHook />}></Route>
+          <Route path="/uncontrolled-component" element={<UncontrolledComponent />}></Route>
+          <Route path="/forward-ref-parent" element={<ForwardRefParent />}></Route>
+          <Route path="/use-form-status-hook" element={<UseFormStatusHook />}></Route>
+          <Route path="/use-transition-hook" element={<UseTransitionHook />}></Route>
+          <Route path="/derived-state" element={<DerivedState />}></Route>
+          <Route path="/lifting-state-up" element={<LiftingStateUp />}></Route>
+          <Route path="/update-object-in-state" element={<UpdateObjectInState />}></Route>
+          <Route path="/use-action-state-hook" element={<UseActionStateHook />}></Route>
+          <Route path="/update-array-in-state" element={<UpdateArrayInState />}></Route>
+          <Route path="/use-id-hook" element={<UseIDHook />}></Route>
+          <Route path="/fragment-wrapper" element={<FragmentWrapper />}></Route>
+          <Route path="/college" element={<College />}></Route>
+          <Route path="/toggle" element={<Toggle />}></Route>
+
+          {/* Show 404 on Invalid url */}
+          {/* <Route path="/*" element={<PageNotFound />}></Route> */}
+
+          {/* Redirect to Homepage on invalid url */}
+          <Route path='/*' element={<Navigate to='/' />}></Route>
+        </Routes>
       </data.Provider>
-      <Link to="/toggle">Toggle</Link>
-      <Routes>
-        <Route path="/toggle" element={<Toggle />}></Route>
-      </Routes>
-      <Navbar />
     </>
   )
 }
