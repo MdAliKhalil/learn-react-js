@@ -38,6 +38,7 @@ import UseRefHook from "./UseRefHook"
 import UseTransitionHook from "./useTransitionHook"
 import Toggle from "./CustomHook/Toggle"
 import { Route, Routes, Link } from "react-router"
+import Navbar from "./Navbar/Navbar"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -124,6 +125,7 @@ function App() {
       <Routes>
         <Route path="/toggle" element={<Toggle />}></Route>
       </Routes>
+      <Navbar />
     </>
   )
 }

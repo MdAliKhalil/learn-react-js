@@ -1,0 +1,35 @@
+* {
+    text-decoration: none;
+}
+
+.header {
+    background-color: skyblue;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style-type: none;
+}
+
+.menuitem {
+    font-weight: 500;
+    color: white;
+}
+
+.menuitem:hover {
+    color: black;
+}
