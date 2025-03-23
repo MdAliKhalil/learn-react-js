@@ -106,9 +106,11 @@ function App() {
 
           {/* Nested Route */}
           <Route path='/university' element={<University />}>
-            <Route index element={<Departments />}></Route>
-            <Route path='faculty' element={<Faculty />}></Route>
-            <Route path='students' element={<Students />}></Route>
+            <Route path='usa'>
+              <Route index element={<Departments />}></Route>
+              <Route path='faculty' element={<Faculty />}></Route>
+              <Route path='students' element={<Students />}></Route>
+            </Route>
           </Route>
         </Route>
 

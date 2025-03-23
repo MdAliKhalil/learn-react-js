@@ -6,9 +6,9 @@ const University = () => {
         <div>
             <div className={style.container}>
                 <h1>University Page</h1>
-                <NavLink to='' className={style.link}>Departments</NavLink>
-                <NavLink to='faculty' className={style.link}>Faculty</NavLink>
-                <NavLink to='students' className={style.link}>Students</NavLink>
+                <NavLink to='usa' className={style.link}>Departments</NavLink>
+                <NavLink to='usa/faculty' className={style.link}>Faculty</NavLink>
+                <NavLink to='usa/students' className={style.link}>Students</NavLink>
             </div>
             <div className={style.container}>
                 <Outlet />
