@@ -1,5 +1,3 @@
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import './App.css'
 import { useState } from "react"
 import ArrayMapping from "./ArrayMapping"
@@ -39,6 +37,10 @@ import Toggle from "./CustomHook/Toggle"
 import { Route, Routes, Navigate } from "react-router"
 import Navbar from "./Navbar/Navbar"
 import PageNotFound from "./PageNotFound"
+import University from './NestedRouting/University'
+import Departments from './NestedRouting/Departments'
+import Faculty from './NestedRouting/Faculty'
+import Students from './NestedRouting/Students'
 
 function App() {
   const [subject, setSubject] = useState('');
@@ -101,6 +103,13 @@ function App() {
           <Route path="/fragment-wrapper" element={<FragmentWrapper />}></Route>
           <Route path="/college" element={<College />}></Route>
           <Route path="/toggle" element={<Toggle />}></Route>
+
+          {/* Nested Route */}
+          <Route path='/university' element={<University />}>
+            <Route path='departments' element={<Departments />}></Route>
+            <Route path='faculty' element={<Faculty />}></Route>
+            <Route path='students' element={<Students />}></Route>
+          </Route>
 
           {/* Show 404 on Invalid url */}
           <Route path="/*" element={<PageNotFound />}></Route>

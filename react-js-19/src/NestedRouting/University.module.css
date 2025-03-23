@@ -1,0 +1,12 @@
+.container {
+    text-align: center;
+}
+
+.link {
+    text-decoration: underline;
+    margin-right: 20px;
+}
+
+.link:hover {
+    color: #000000;
+}
