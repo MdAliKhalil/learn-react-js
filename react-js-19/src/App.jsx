@@ -70,7 +70,7 @@ function App() {
         }}>Reset</button> */}
       <Routes>
         <Route element={<Navbar />}>
-          <Route path="/" element={<Counter />}></Route>
+          <Route index element={<Counter />}></Route>
           <Route path="/jsx-exercise" element={<JSXExercise />}></Route>
           <Route path="/state-management" element={<StateManagement />}></Route>
           <Route path="/conditional-rendering-exercise" element={<ConditionalRenderingExercise />}></Route>
