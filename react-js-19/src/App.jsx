@@ -47,8 +47,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <data.Provider value={subject}>
+      {/* <data.Provider value={subject}>
         <select value={subject} onChange={(event) => setSubject(event.target.value)} style={{ textAlign: 'center', display: 'block', margin: 'auto' }}>
           <option value="">Select a Subject</option>
           <option value="Math">Math</option>
@@ -68,8 +67,9 @@ function App() {
           margin: 'auto'
         }} onClick={() => {
           setSubject('');
-        }}>Reset</button>
-        <Routes>
+        }}>Reset</button> */}
+      <Routes>
+        <Route element={<Navbar />}>
           <Route path="/" element={<Counter />}></Route>
           <Route path="/jsx-exercise" element={<JSXExercise />}></Route>
           <Route path="/state-management" element={<StateManagement />}></Route>
@@ -106,18 +106,19 @@ function App() {
 
           {/* Nested Route */}
           <Route path='/university' element={<University />}>
-            <Route path='departments' element={<Departments />}></Route>
+            <Route index element={<Departments />}></Route>
             <Route path='faculty' element={<Faculty />}></Route>
             <Route path='students' element={<Students />}></Route>
           </Route>
+        </Route>
 
-          {/* Show 404 on Invalid url */}
-          <Route path="/*" element={<PageNotFound />}></Route>
+        {/* Show 404 on Invalid url */}
+        <Route path="/*" element={<PageNotFound />}></Route>
 
-          {/* Redirect to Homepage on invalid url */}
-          {/* <Route path='/*' element={<Navigate to='/' />}></Route> */}
-        </Routes>
-      </data.Provider>
+        {/* Redirect to Homepage on invalid url */}
+        {/* <Route path='/*' element={<Navigate to='/' />}></Route> */}
+      </Routes>
+      {/* </data.Provider> */}
     </>
   )
 }

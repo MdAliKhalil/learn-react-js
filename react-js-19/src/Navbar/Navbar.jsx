@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, Outlet } from "react-router";
 import Divider from "../Divider";
 import style from './Navbar.module.css';
 
@@ -23,6 +23,9 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div>
+                <Outlet />
             </div>
         </div>
     );
