@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router";
+import { Link, NavLink, Outlet } from "react-router";
 import Divider from "../Divider";
 import style from './Navbar.module.css';
 
@@ -10,19 +10,19 @@ const Navbar = () => {
                 <div>
                     <ul className={style.menu}>
                         <li>
-                            <Link to="/" className={style.menuitem}>Home</Link>
+                            <NavLink to="/" className={({ isActive }) => isActive ? `${style.menuitem}` : `${style.link}`}>Home</NavLink>
                         </li>
                         <li>
-                            <Link to="/toggle" className={style.menuitem}>Toggle</Link>
+                            <NavLink to="/toggle" className={({ isActive }) => isActive ? `${style.menuitem}` : `${style.link}`}>Toggle</NavLink>
                         </li>
                         <li>
-                            <Link to="/user-list" className={style.menuitem}>Users</Link>
+                            <NavLink to="/user-list" className={({ isActive }) => isActive ? `${style.menuitem}` : `${style.link}`}>Users</NavLink>
                         </li>
                         <li>
-                            <Link to="university/usa" className={style.menuitem}>University</Link>
+                            <NavLink to="university/usa" className={({ isActive }) => isActive ? `${style.menuitem}` : `${style.link}`}>University</NavLink>
                         </li>
                         <li>
-                            <Link to="/login-form" className={style.menuitem}>Login</Link>
+                            <NavLink to="/login-form" className={({ isActive }) => isActive ? `${style.menuitem}` : `${style.link}`}>Login</NavLink>
                         </li>
                     </ul>
                 </div>
