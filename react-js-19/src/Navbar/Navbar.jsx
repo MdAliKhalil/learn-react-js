@@ -16,6 +16,9 @@ const Navbar = () => {
                             <Link to="/toggle" className={style.menuitem}>Toggle</Link>
                         </li>
                         <li>
+                            <Link to="/user-list" className={style.menuitem}>Users</Link>
+                        </li>
+                        <li>
                             <Link to="university/usa" className={style.menuitem}>University</Link>
                         </li>
                         <li>

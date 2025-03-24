@@ -41,6 +41,8 @@ import University from './NestedRouting/University'
 import Departments from './NestedRouting/Departments'
 import Faculty from './NestedRouting/Faculty'
 import Students from './NestedRouting/Students'
+import UserList from './DynamicRouting/UserList'
+import UserDetails from './DynamicRouting/UserDetails'
 
 function App() {
   const [subject, setSubject] = useState('');
@@ -103,6 +105,8 @@ function App() {
           <Route path="/fragment-wrapper" element={<FragmentWrapper />}></Route>
           <Route path="/college" element={<College />}></Route>
           <Route path="/toggle" element={<Toggle />}></Route>
+          <Route path='/user-list' element={<UserList />}></Route>
+          <Route path='/user-list/:id/:name' element={<UserDetails />}></Route>
 
           {/* Nested Route */}
           <Route path='/university' element={<University />}>
