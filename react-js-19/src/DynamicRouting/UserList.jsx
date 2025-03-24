@@ -13,7 +13,7 @@ const UserList = () => {
             <ul>
                 {
                     list.map((item) => (
-                        <li key={item.id}>{item.id} <br /> <Link to={`/user-list/${item.id}/${item.name}`} style={{ textDecoration: 'underline', color: 'blue' }}>{item.name}</Link></li>
+                        <li key={item.id}>{item.id} <br /> <Link to={`/user-list/${item.id}/${item.name}?`} style={{ textDecoration: 'underline', color: 'blue' }}>{item.name}</Link></li>
                     ))
                 }
             </ul>

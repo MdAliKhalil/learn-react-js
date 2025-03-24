@@ -106,11 +106,11 @@ function App() {
           <Route path="/college" element={<College />}></Route>
           <Route path="/toggle" element={<Toggle />}></Route>
           <Route path='/user-list' element={<UserList />}></Route>
-          <Route path='/user-list/:id/:name' element={<UserDetails />}></Route>
+          <Route path='/user-list/:id/:name?' element={<UserDetails />}></Route>
 
           {/* Nested Route */}
           <Route path='/university' element={<University />}>
-            <Route path='usa'>
+            <Route path='usa?'>
               <Route index element={<Departments />}></Route>
               <Route path='faculty' element={<Faculty />}></Route>
               <Route path='students' element={<Students />}></Route>
